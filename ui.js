@@ -7,9 +7,12 @@ const importJsx = require('import-jsx');
 const Table = importJsx('./components/Table')
 
 const App = () => (
-  <Gradient name='summer'>
-    <BigText text="orderbook cli" align='center' font='chrome'/>
-  </Gradient>
+  <>
+    <Gradient name='summer'>
+      <BigText text="orderbook cli" align='center' font='chrome'/>
+    </Gradient>
+    <Table/>
+  </>
 );
 
 module.exports = App;
