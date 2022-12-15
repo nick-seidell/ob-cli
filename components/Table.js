@@ -10,9 +10,12 @@ const Table = () => {
   const [data, setData] = useState([]);
 
   useEffect(()=>{
-    axios.get(url)
-    .then(response => setData(response.data))
-    .catch(e => console.log(e))
+    const interval = setInterval(()=>{
+      axios.get(url)
+      .then(response => setData(response.data))
+      .catch(e => console.log(e))
+    },250);
+    return() => clearInterval(interval)
   },[]);
 
   return (
