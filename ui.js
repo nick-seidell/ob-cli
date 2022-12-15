@@ -8,8 +8,8 @@ const Table = importJsx('./components/Table')
 
 const App = () => (
   <>
-    <Gradient name='summer'>
-      <BigText text="orderbook cli" align='center' font='chrome'/>
+    <Gradient name='teen'>
+      <BigText text="OB-CLI" align='center' font='3d'/>
     </Gradient>
     <Table/>
   </>
